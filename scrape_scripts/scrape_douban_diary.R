@@ -3,9 +3,9 @@
 setwd('xxx')
 library(rvest)
 
-write.path = './'
+write.path = '../'
 
-url = 'https://www.douban.com/note/750439454/'
+url = ''
 web = read_html(url)
 
 # scrape basic information
