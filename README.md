@@ -1,28 +1,91 @@
-# 2020wuhan_individual_stories  
+# 2020 Wuhan Individual Stories  
 
-来自豆友们在疫情期间的记录。暂定范围为豆瓣，未来可能有所扩增。  
+来自豆友们在疫情期间的记录，大部分来自湖北省。暂定范围为豆瓣，未来可能有所扩增。  
 
-------
-### 欢迎加入！欢迎各种建议，各种pull request！谢谢！  
+#### 📖项目结构  
 
-烦请pull前获取原作者授权，感谢！
+```
+├─01-22-someone-diary.md								每个作品为一个单独的.md文件
+├─...
+├─pic                          
+│  └─01-22-someone-diary1.jpg						每个作品内的配图
+│  └─01-22-someone-diary2.jpg
+│  └─...
+├─...
+```
 
-------
+#### ❤️如何加入？  
+
+❤️**感谢加入**❤️
+
+1. 获取作者转载授权 
+
+2. fork, 编辑todo list认领未添加作品并commit to a new branch, create pull request. **commit时请备注“认领”以及认领作品名称列表**
+
+3. 等待merge
+
+4. merge成功后，添加.md格式文件
+
+   - 标题：日期（mm-dd）-作者姓名-作品名.md
+
+   - 内容：
+
+     - 第一行请注明授权：
+
+       ```
+       已获得作者转载授权。
+       ```
+
+     - 第二行请注明作者，格式如下：
+
+       ```
+       作者：[某人（来自豆瓣）](作者主页url) 
+       ```
+
+     - 第三行请注明来源，格式如下：
+
+       ```来源：https://www.douban.com/note/xxxx
+       来源：https://www.douban.com/note/xxxx
+       ```
+
+     - 第四行请注明发布时间，格式如下
+
+       ```
+       yyyy-mm-dd hh:mm:ss
+       2020-01-27 00:13:10
+       ```
+
+     - 正文部分
+
+       - 图片请放在./pic/文件夹中，文件名格式：日期（mm-dd）-作者姓名-作品名1.jpg
+
+5. commit the changes to a new branch, create pull request
 
 
 
 
 
-## 友情链接  
-[lalambdada/2019-nCoV](https://github.com/lalambdada/2019-nCoV)  
-[2019ncovmemory/nCovMemory](https://github.com/2019ncovmemory/nCovMemory)  
+
+
+#### 🖊️欢迎意见和建议
+
+请提issue：https://github.com/jiayiliujiayi/2020nCov_individual_archives/issues
+
+or mailto: jiayiliujiayiliu@gmail.com
+
+## 👬友情链接  
+
+[lalambdada/2019-nCoV](https://github.com/lalambdada/2019-nCoV)：2019-nCoV 社交媒体文章列表  
+[2019ncovmemory/nCovMemory](https://github.com/2019ncovmemory/nCovMemory) ：2020新冠肺炎记忆：报道、非虚构与个人叙述（持续更新） Memory of 2020 nCov: Media Coverage, Non-fiction Writings, and Individual Narratives (Continuously updating)
 
 
 
 **TODO**  
 **_Reproduce Authorization_**  
 reproduce authorized by the author, to be added:  
-- [ ] 林培源  
+
+- [x] 林培源 
+  - [ ] the initium pending  
 - [ ] kaiba
 - [ ] 豌豆  
 - [ ] 江上  

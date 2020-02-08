@@ -1,4 +1,4 @@
-版权归作者所有，任何形式转载请联系作者。  
+已获得作者转载授权。  
 作者：[JoyceCheng（来自豆瓣）](https://www.douban.com/people/30298116/)  
 来源：https://www.douban.com/note/749940802/  
 
