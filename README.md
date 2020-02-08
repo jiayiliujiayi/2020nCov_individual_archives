@@ -19,7 +19,7 @@
 
 
 
-**TODO**
+**TODO**  
 authorized, to be added:  
 - [ ] 林培源  
 - [ ] kaiba
@@ -29,20 +29,23 @@ authorized, to be added:
 - [ ] 星星日记  
 - [ ] 陈星宇作词  
 - [ ] Jabbahy  
-%- [ ]   
-%- [ ]   
-
+- [ ] 小样麻麻  
+<!--- 
+- [ ]   
+- [ ]   
+- [ ]   
+- [ ]   --->
 authorization pending:  
 - [ ] Lawyer_Tam  
-- [ ] 小样麻麻  
+- [X] 小样麻麻  
 - [ ] 七肢桶除以零  
 - [ ] 蘸水笔  
 - [ ] 大猪花  
 - [ ] 香菇小姐  
 - [ ] Xiaozhang  
 - [ ] JoyceCheng  
-%- [ ]   
-%- [ ]   
-%- [ ]   
-%- [ ]   
-%- [ ]   
+<!--- 
+- [ ]   
+- [ ]   
+- [ ]   
+- [ ]   --->
