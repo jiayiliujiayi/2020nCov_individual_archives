@@ -24,7 +24,9 @@
 
 3. 等待merge
 
-4. merge成功后，添加.md格式文件
+4. merge成功后，添加.md格式文件 
+
+   _(此步可以通过./scrape_scripts/scrape_douban_diary.R来实现，记得更改变量url)_
 
    - 主文件名：日期（mm-dd）-作者姓名-作品名.md
 
@@ -90,7 +92,7 @@ reproduce authorized by the author, to be added:
 - [ ] 星星日记  
 - [ ] 陈星宇作词  
 - [ ] Jabbahy  
-- [ ] 小样麻麻   
+- [x] 小样麻麻   
 - [ ] Lawyer_Tam 
 - [ ] 七肢桶除以零  
 - [ ] JoyceCheng 
