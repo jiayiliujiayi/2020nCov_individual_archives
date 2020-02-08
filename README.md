@@ -31,6 +31,8 @@ authorized, to be added:
 - [ ] Jabbahy  
 - [ ] 小样麻麻   
 - [ ] Lawyer_Tam 
+- [ ] 七肢桶除以零  
+- [ ] JoyceCheng 
 <!---
 - [ ]   
 - [ ]   
@@ -38,12 +40,12 @@ authorized, to be added:
 authorization pending:  
 - [X] Lawyer_Tam  
 - [X] 小样麻麻  
-- [ ] 七肢桶除以零  
+- [X] 七肢桶除以零  
 - [ ] 蘸水笔  
 - [ ] 大猪花  
 - [ ] 香菇小姐  
 - [ ] Xiaozhang  
-- [ ] JoyceCheng  
+- [X] JoyceCheng  
 <!--- 
 - [ ]   
 - [ ]   
