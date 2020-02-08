@@ -20,7 +20,8 @@
 
 
 **TODO**  
-authorized, to be added:  
+**_Reproduce Authorization_**  
+reproduce authorized by the author, to be added:  
 - [ ] 林培源  
 - [ ] kaiba
 - [ ] 豌豆  
@@ -37,7 +38,7 @@ authorized, to be added:
 - [ ]   
 - [ ]   
 - [ ]   --->
-authorization pending:  
+reproduce authorization pending:  
 - [X] Lawyer_Tam  
 - [X] 小样麻麻  
 - [X] 七肢桶除以零  
@@ -50,4 +51,13 @@ authorization pending:
 - [ ]   
 - [ ]   
 - [ ]   
-- [ ]   --->
+- [ ]   --->  
+
+**_Translation Authorization_**  
+translation authorized by the author, to be added:  
+- [ ] test1
+- [x] test2  
+
+translation authorization pending:   
+- [ ] test3
+- [x] test4  
