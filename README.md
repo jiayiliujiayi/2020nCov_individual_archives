@@ -34,10 +34,30 @@ reproduce authorized by the author, to be added:
 - [ ] Lawyer_Tam 
 - [ ] 七肢桶除以零  
 - [ ] JoyceCheng 
+- [X] 邓安庆  
+- [X] huseng  
+- [X] 林谷  
+- [X] 向阳
+- [X] 地味鸭
+- [X] 晓宇
+- [X] 文泽尔书友会  
+- [X] 胡森
+- [X] 白朗
+- [X] 啊哈哈  
+- [X] 涵子  
+- [X] 秋池 .  
+- [X] 暖_安然  
+- [X] 兔草  
+- [X] 不具名人士🌈  
+- [X] 谢流放  
 <!---
 - [ ]   
 - [ ]   
-- [ ]   --->
+- [ ]   
+- [X]   
+- [X]   
+- [X]   
+--->
 reproduce authorization pending:  
 - [X] Lawyer_Tam  
 - [X] 小样麻麻  
