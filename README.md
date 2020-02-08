@@ -20,7 +20,7 @@
 
 1. 获取作者转载授权 
 
-2. fork, 编辑todo list认领未添加作品并commit to a new branch, create pull request. **commit时请备注“认领”以及认领作品名称列表**
+2. 克隆这个项目（clone this repository）, 编辑todo list认领未添加作品并commit to a new branch, create pull request. **commit时请备注“认领”以及认领作品名称列表**
 
 3. 等待merge
 
