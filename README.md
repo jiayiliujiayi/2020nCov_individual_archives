@@ -86,7 +86,7 @@ reproduce authorized by the author, to be added:
 - [x] 林培源 
   - [ ] the initium pending  
 - [x] kaiba
-- [ ] 豌豆  
+- [x] 豌豆  
 - [ ] 江上  
 - [ ] 马亿  
 - [ ] 星星日记  

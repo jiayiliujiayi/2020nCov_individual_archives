@@ -1,11 +1,11 @@
 ## tobe added: adding pics function
 
-setwd('xxx')
+#setwd('xxx')
 library(rvest)
 
 write.path = '../'
 
-url = ''
+url = 'https://www.douban.com/note/750160638/'
 web = read_html(url)
 
 # scrape basic information
