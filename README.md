@@ -1,8 +1,8 @@
-# 2020 Wuhan Individual Stories  
+# 📓2020 Wuhan Individual Stories  
 
-来自豆友们在疫情期间的记录，大部分来自湖北省。暂定范围为豆瓣，未来可能有所扩增。(以及谢谢大家的Star，受之惶恐。)  
+来自豆友们在疫情期间的记录，大部分来自湖北省。暂定范围为豆瓣，未来可能有所扩增。_(以及，非常感谢大家的Star，受之惶恐。)_  
 
-#### 📖项目结构  
+## 💻项目结构  
 
 ```
 ├─01-22-someone-diary.md                 每个作品为一个单独的.md文件
@@ -14,9 +14,9 @@
 ├─...
 ```
 
-#### ❤️如何加入？  
+## ❤️如何加入？  
 
-❤️**欢迎加入 & 感谢加入**❤️
+✨**欢迎加入 & 感谢加入**✨
 
 1. 获取作者转载授权 
 
@@ -26,7 +26,7 @@
 
 4. merge成功后，添加.md格式文件
 
-   - 标题：日期（mm-dd）-作者姓名-作品名.md
+   - 主文件名：日期（mm-dd）-作者姓名-作品名.md
 
    - 内容：
 
@@ -57,17 +57,15 @@
 
      - 正文部分
 
-       - 图片请放在./pic/文件夹中，文件名格式：日期（mm-dd）-作者姓名-作品名1.jpg
+       - 配图请保存至./pic/，主文件名与对应作品名一致：日期（mm-dd）-作者姓名-作品名1.jpg
+     - markdown指南
+       - https://yuhongjun.github.io/tech/2017/05/02/Markdown-%E8%AF%AD%E6%B3%95%E6%89%8B%E5%86%8C-%E5%AE%8C%E6%95%B4%E6%95%B4%E7%90%86%E7%89%88.html
+       - https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
 
 5. commit the changes to a new branch, create pull request
 
 
-
-
-
-
-
-#### 🖊️欢迎意见和建议
+## 🖊️欢迎意见和建议
 
 请提issue：https://github.com/jiayiliujiayi/2020nCov_individual_archives/issues
 
@@ -77,7 +75,6 @@ or mailto: jiayiliujiayiliu@gmail.com
 
 [lalambdada/2019-nCoV](https://github.com/lalambdada/2019-nCoV)：2019-nCoV 社交媒体文章列表  
 [2019ncovmemory/nCovMemory](https://github.com/2019ncovmemory/nCovMemory) ：2020新冠肺炎记忆：报道、非虚构与个人叙述（持续更新） Memory of 2020 nCov: Media Coverage, Non-fiction Writings, and Individual Narratives (Continuously updating)
-
 
 
 **TODO**  
