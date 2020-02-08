@@ -5,7 +5,7 @@ library(rvest)
 
 write.path = '../'
 
-url = 'https://www.douban.com/note/750160638/'
+url = ''
 web = read_html(url)
 
 # scrape basic information
