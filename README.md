@@ -29,14 +29,14 @@ authorized, to be added:
 - [ ] 星星日记  
 - [ ] 陈星宇作词  
 - [ ] Jabbahy  
-- [ ] 小样麻麻  
-<!--- 
-- [ ]   
+- [ ] 小样麻麻   
+- [ ] Lawyer_Tam 
+<!---
 - [ ]   
 - [ ]   
 - [ ]   --->
 authorization pending:  
-- [ ] Lawyer_Tam  
+- [X] Lawyer_Tam  
 - [X] 小样麻麻  
 - [ ] 七肢桶除以零  
 - [ ] 蘸水笔  
