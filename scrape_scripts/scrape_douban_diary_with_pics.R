@@ -7,7 +7,7 @@ library(dplyr)
 write.path = '../'
 pic.path = '../pic/'
 
-url = ''
+url = 'https://www.douban.com/note/750273776/'
 web = read_html(url)
 
 # scrape basic information
