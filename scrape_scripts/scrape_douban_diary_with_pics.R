@@ -82,3 +82,5 @@ diary_pics <-
     )
     close(fileConn)
   }
+
+diary_pics('')

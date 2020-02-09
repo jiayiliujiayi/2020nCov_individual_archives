@@ -89,12 +89,13 @@ reproduce authorized by the author, to be added:
 - [x] 豌豆  
 - [ ] 江上  
 - [ ] 马亿  
-- [ ] 星星日记  
-- [ ] 陈星宇作词  
+- [x] 陈星宇作词  星星日记
+  - [ ] pics pending 
 - [ ] Jabbahy  
 - [x] 小样麻麻   
 - [ ] Lawyer_Tam 
-- [ ] 七肢桶除以零  
+- [x] 七肢桶除以零  
+  - [ ] pics pending
 - [ ] JoyceCheng 
 - [X] 邓安庆  
 - [X] huseng  
