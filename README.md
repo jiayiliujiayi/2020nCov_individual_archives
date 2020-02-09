@@ -97,7 +97,7 @@ reproduce authorized by the author, to be added:
   - [ ] the initium pending  
 - [x] kaiba
 - [x] 豌豆  
-- [ ] 江上  
+- [x] 江上  
 - [ ] 马亿  
 - [x] 陈星宇作词  星星日记
   - [ ] pics pending 
