@@ -98,12 +98,13 @@ reproduce authorized by the author, to be added:
 - [x] kaiba
 - [x] 豌豆  
 - [x] 江上  
-- [ ] 马亿  
+- [x] 马亿  
 - [x] 陈星宇作词  星星日记
   - [ ] pics pending 
 - [ ] Jabbahy  
 - [x] 小样麻麻   
-- [ ] Lawyer_Tam 
+- [x] Lawyer_Tam 
+  - [ ] img pending
 - [x] 七肢桶除以零  
   - [x] pics pending
 - [ ] JoyceCheng  
