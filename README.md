@@ -76,7 +76,8 @@ or mailto: jiayiliujiayiliu@gmail.com
 ## 👬友情链接  
 
 [lalambdada/2019-nCoV](https://github.com/lalambdada/2019-nCoV)：2019-nCoV 社交媒体文章列表  
-[2019ncovmemory/nCovMemory](https://github.com/2019ncovmemory/nCovMemory) ：2020新冠肺炎记忆：报道、非虚构与个人叙述（持续更新） Memory of 2020 nCov: Media Coverage, Non-fiction Writings, and Individual Narratives (Continuously updating)
+[2019ncovmemory/nCovMemory](https://github.com/2019ncovmemory/nCovMemory) ：2020新冠肺炎记忆：报道、非虚构与个人叙述（持续更新） Memory of 2020 nCov: Media Coverage, Non-fiction Writings, and Individual Narratives (Continuously updating)  
+[OpenSourceWuhan](https://weileizeng.github.io/OpenSourceWuhan/): A collection of Open Source projects for supporting Wuhan during 2019-nCoV
 
 
 **TODO**  
