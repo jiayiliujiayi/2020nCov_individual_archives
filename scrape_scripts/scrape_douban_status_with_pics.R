@@ -8,7 +8,7 @@ library(stringr) ##str_trim()
     write.path = '../'
     pic.path = '../pic/'
     
-    url = 'https://www.douban.com/people/58982367/status/2772012810/'
+    url = ''
     web = read_html(url)
     
     # scrape basic information
