@@ -4,11 +4,11 @@
 library(rvest)
 library(dplyr)
 
-diary_pics <- 
-  function(url){
+
     write.path = '../'
     pic.path = '../pic/'
     
+    url = "https://www.douban.com/note/751054627/"
     web = read_html(url)
     
     # scrape basic information
@@ -81,6 +81,5 @@ diary_pics <-
       fileConn
     )
     close(fileConn)
-  }
 
-diary_pics('')
+
