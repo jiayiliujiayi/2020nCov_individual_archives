@@ -8,7 +8,7 @@ library(stringr) ##str_trim()
     write.path = '../'
     pic.path = '../pic/'
     
-    url = ''
+    url = 'https://www.douban.com/people/58982367/status/2772064951/'
     web = read_html(url)
     
     # scrape basic information
@@ -18,7 +18,7 @@ library(stringr) ##str_trim()
     author_link = html_nodes(web,".text a") %>% html_attr('href')
     ## pub date
     pub_date = html_nodes(web,".pubtime") %>% html_text() %>% 
-                  gsub('\n', '', .) %>% gsub('  ', "",.)
+                  gsub('\n', '', .) %>% gsub('  ', "",.) %>% gsub(' ', '_', .)
     
     # scrape note
     blockquote = html_nodes(web,"blockquote") %>% 
@@ -37,7 +37,7 @@ library(stringr) ##str_trim()
         img_urls[i], 
         destfile = paste0(
           pic.path, 
-          pub_date %>% substr(., start = 6, stop = 10), 
+          pub_date, 
           "-", 
           author, 
           "的广播", 
@@ -51,7 +51,7 @@ library(stringr) ##str_trim()
     
     # write file
     filename = paste0( 
-      pub_date %>% substr(., start = 6, stop = 10), 
+      pub_date, 
       "-", 
       author, 
       "的广播"
