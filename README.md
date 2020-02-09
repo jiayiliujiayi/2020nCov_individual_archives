@@ -97,7 +97,7 @@ reproduce authorized by the author, to be added:
 - [x] 小样麻麻   
 - [ ] Lawyer_Tam 
 - [x] 七肢桶除以零  
-  - [ ] pics pending
+  - [x] pics pending
 - [ ] JoyceCheng  
 - [ ] 小钻风  
 - [x] 美猴王大世界  
