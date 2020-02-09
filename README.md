@@ -1,6 +1,14 @@
 # 📓2020 Wuhan Individual Stories  
 
-来自豆友们在疫情期间的记录，大部分来自湖北省。暂定范围为豆瓣，未来可能有所扩增。_(以及，非常感谢大家的Star，受之惶恐。)_  
+来自豆友们在疫情期间的记录，大部分来自湖北省。暂定范围为豆瓣，未来可能有所扩增。  
+
+_(以及，非常感谢大家的Star，受之惶恐。)_  
+
+以及弱弱求助，欢迎大力拍砖🛠：在写scripts来抓取网页内容（高度依赖rvest package）：  
+- 目前尚未解决的困难是 **如何将网页中的 _文字_ & _图片_ & _图片描述_ 同时写入.md文件**  
+- 已实现的功能：抓取豆瓣日记页面中的“日记征文”部分并生成.md，下载豆瓣日记页面中的图片并保存至./pic/  
+- fyi: scripts在./scrape_scripts/scrape_douban_diary_with_pics.R  
+
 
 ## 💻项目结构  
 
@@ -69,7 +77,7 @@
 
 ## 🖊️欢迎意见和建议
 
-请提issue：https://github.com/jiayiliujiayi/2020nCov_individual_archives/issues
+[欢迎提issue](https://github.com/jiayiliujiayi/2020nCov_individual_archives/issues/new)
 
 or mailto: jiayiliujiayiliu@gmail.com
 
