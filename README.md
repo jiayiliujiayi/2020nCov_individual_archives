@@ -100,6 +100,7 @@ reproduce authorized by the author, to be added:
   - [x] pics pending
 - [ ] JoyceCheng  
 - [ ] 小钻风  
+  - [ ] pics pending
 - [x] 美猴王大世界  
 - [X] 邓安庆  
 - [X] huseng  
