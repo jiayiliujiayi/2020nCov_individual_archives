@@ -143,9 +143,11 @@ reproduce authorization pending:
 
 **_Translation Authorization_**  
 translation authorized by the author, to be added:  
-- [ ] test1
+- [ ] 美猴王大世界
+- [ ] 小钻风
 - [x] test2  
 
 translation authorization pending:   
 - [ ] test3
 - [x] test4  
+
