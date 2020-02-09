@@ -96,8 +96,9 @@ reproduce authorized by the author, to be added:
 - [ ] Lawyer_Tam 
 - [x] 七肢桶除以零  
   - [ ] pics pending
-- [ ] JoyceCheng 
-- [ ] 小钻风
+- [ ] JoyceCheng  
+- [ ] 小钻风  
+- [ ] 美猴王大世界  
 - [X] 邓安庆  
 - [X] huseng  
 - [X] 林谷  
@@ -130,7 +131,7 @@ reproduce authorization pending:
 - [ ] 大猪花  
 - [ ] 香菇小姐  
 - [ ] Xiaozhang  
-- [ ] 美猴王大世界
+- [X] 美猴王大世界
 - [X] JoyceCheng  
 <!--- 
 - [ ]   
