@@ -8,7 +8,8 @@ library(dplyr)
     write.path = '../'
     pic.path = '../pic/'
     
-    web = read_html("")
+    url = ''
+    web = read_html(url)
     
     # scrape basic information
     ## title
