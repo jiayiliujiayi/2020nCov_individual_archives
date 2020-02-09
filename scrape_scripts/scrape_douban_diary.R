@@ -21,7 +21,7 @@ pub_date = html_nodes(web,".pub-date") %>% html_text()
 # scrape note
 note = html_nodes(web,".article p") %>% 
               html_text() %>% 
-              .[-c((length(.) - 2):length(.))] %>% 
+              .[-c((length(.) - 1):length(.))] %>% 
               .[nchar(.) != 0] %>% 
               # escape hashtag
               gsub('#', "&#35;", .) %>% 
