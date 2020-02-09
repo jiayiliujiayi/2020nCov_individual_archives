@@ -10,7 +10,7 @@ set.seed(41)
     write.path = '../'
     pic.path = '../pic/'
     
-    url = 'https://www.douban.com/people/47513232/status/2797621146/'
+    url = ''
     web = read_html(url)
     
     # scrape basic information
@@ -62,8 +62,8 @@ set.seed(41)
       paste0(write.path, filename, '.md')
     )
     
-    
-    writeLines(
+if(length(img_urls) != 0){
+  writeLines(
       c(
         paste0('来源：[', author, '（来自豆瓣）]', 
                '(', author_link, ')的[广播](', url, ')'), 
@@ -71,12 +71,24 @@ set.seed(41)
         pub_date, 
         '\n', 
         blockquote, 
-        while(length(img_urls) != 0){
-          return(paste0('![](', './pic/', filename, 1:length(img_urls), '.jpg)  \n'))
-        }
+        paste0('![](', './pic/', filename, 1:length(img_urls), '.jpg)  \n')
       ), 
       fileConn
     )
+} else {
+  writeLines(
+    c(
+      paste0('来源：[', author, '（来自豆瓣）]', 
+             '(', author_link, ')的[广播](', url, ')'), 
+      '\n', 
+      pub_date, 
+      '\n', 
+      blockquote#, 
+      #paste0('![](', './pic/', filename, 1:length(img_urls), '.jpg)  \n')
+    ), 
+    fileConn
+  )
+}
     
     close(fileConn)
 
