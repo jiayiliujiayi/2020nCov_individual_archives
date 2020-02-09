@@ -5,10 +5,12 @@ library(rvest)
 library(dplyr)
 library(stringr) ##str_trim()
 
+set.seed(41)
+
     write.path = '../'
     pic.path = '../pic/'
     
-    url = ''
+    url = 'https://www.douban.com/people/47513232/status/2797621146/'
     web = read_html(url)
     
     # scrape basic information
@@ -64,12 +66,14 @@ library(stringr) ##str_trim()
     writeLines(
       c(
         paste0('来源：[', author, '（来自豆瓣）]', 
-               '(', author_link, ')的[广播](', author_link, ')'), 
+               '(', author_link, ')的[广播](', url, ')'), 
         '\n', 
         pub_date, 
         '\n', 
         blockquote, 
-        paste0('![](', './pic/', filename, 1:length(img_urls), '.jpg)  \n')
+        while(length(img_urls) != 0){
+          return(paste0('![](', './pic/', filename, 1:length(img_urls), '.jpg)  \n'))
+        }
       ), 
       fileConn
     )
