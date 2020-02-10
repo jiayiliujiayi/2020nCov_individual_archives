@@ -6,7 +6,7 @@ _(以及，非常感谢大家的Star，受之惶恐。)_
 
 以及弱弱求助，欢迎大力拍砖🛠：在写scripts来抓取网页内容（高度依赖rvest package）：  
 - 目前尚未解决的困难是 **如何将网页中的 _文字_ & _图片_ & _图片描述_ 同时写入.md文件**  
-- 已实现的功能：抓取豆瓣日记页面中的“日记征文”部分并生成.md，下载豆瓣日记页面中的图片并保存至./pic/  
+- 已实现的功能：抓取豆瓣日记页面中的“日记正文”部分并生成.md，下载豆瓣日记页面中的图片并保存至./pic/  
 - fyi: scripts在./scrape_scripts/scrape_douban_diary_with_pics.R  
 
 
@@ -14,10 +14,12 @@ _(以及，非常感谢大家的Star，受之惶恐。)_
 
 ```
 ├─01-22-someone-diary.md                 每个作品为一个单独的.md文件
+├─01-22-someone-status.md                
 ├─...
 ├─pic                          
 │  └─01-22-someone-diary1.jpg	         每个作品内的配图
 │  └─01-22-someone-diary2.jpg
+│  └─01-22-someone-status1.jpg	         
 │  └─...
 ├─...
 ```
