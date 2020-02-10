@@ -12,3 +12,10 @@
 
 封城……  
 
+我爱武汉。
+
+God bless WuHan!
+
+![](/Users/jliu23/Documents/Personal/2020wuhan_individual_stories/pic/01-23-Lawyer_Tam-有生之年1.jpg)
+
+![](/Users/jliu23/Documents/Personal/2020wuhan_individual_stories/pic/01-23-Lawyer_Tam-有生之年2.jpg)
