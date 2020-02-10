@@ -61,7 +61,8 @@ set.seed(41)
     fileConn = file(
       paste0(write.path, filename, '.md')
     )
-    
+
+    #################  these craps needs to be simplified #################    
 if(length(img_urls) != 0){
   writeLines(
       c(
@@ -89,7 +90,7 @@ if(length(img_urls) != 0){
     fileConn
   )
 }
-    
+
     close(fileConn)
 
 
