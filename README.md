@@ -109,7 +109,7 @@ reproduce authorized by the author, to be added:
   - [ ] img pending
 - [x] 七肢桶除以零  
   - [x] pics pending
-- [ ] JoyceCheng  
+- [x] JoyceCheng  
 - [ ] 小钻风  
   - [ ] pics pending
 - [x] 美猴王大世界  
