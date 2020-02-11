@@ -112,6 +112,7 @@ reproduce authorized by the author, to be added:
 - [x] JoyceCheng  
 - [ ] 小钻风  
   - [ ] pics pending
+- [ ] 大猪花  
 - [x] 美猴王大世界  
 - [X] 邓安庆  
 - [X] huseng  
@@ -142,7 +143,7 @@ reproduce authorization pending:
 - [X] 小样麻麻  
 - [X] 七肢桶除以零  
 - [ ] 蘸水笔  
-- [ ] 大猪花  
+- [x] 大猪花  
 - [ ] 香菇小姐  
 - [ ] Xiaozhang  
 - [ ] 金树树
