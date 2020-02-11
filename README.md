@@ -146,7 +146,7 @@ reproduce authorization pending:
 - [ ] 香菇小姐  
 - [ ] Xiaozhang  
 - [ ] 金树树
-- [ ] 
+- [ ] Mr. Cancer
 - [X] 美猴王大世界
 - [X] JoyceCheng  
 <!--- 
