@@ -112,8 +112,8 @@ reproduce authorized by the author, to be added:
 - [x] JoyceCheng  
 - [ ] 小钻风  
   - [ ] pics pending
-- [ ] 金树树
-- [ ] Mr. Cancer
+- [x] 金树树
+- [x] Mr. Cancer
 - [x] 大猪花  
 - [x] 美猴王大世界  
 - [X] 邓安庆  
