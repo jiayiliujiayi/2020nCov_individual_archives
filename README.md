@@ -94,7 +94,6 @@ or mailto: jiayiliujiayiliu@gmail.com
    - [OpenSourceWuhan](https://weileizeng.github.io/OpenSourceWuhan/): A collection of Open Source projects for supporting Wuhan during 2019-nCoV  
    - [疫情与舆情：武汉新冠肺炎时间线TIMELINE](https://github.com/Pratitya/wuhan2020-timeline):努力记录自2019年12月起武汉新冠肺炎疫情进展的时间线，尽可能搜集信息，因为假若有敏感内容，墙内容易炸号，故有此项目。  
 
-
 **TODO**  
 **_Reproduce Authorization_**  
 reproduce authorized by the author, to be added:  
@@ -164,6 +163,7 @@ reproduce authorization pending:
 
 **_Translation Authorization_**  
 translation authorized by the author, to be added:  
+
 - [ ] 美猴王大世界
 - [ ] 小钻风
 - [x] test2  
