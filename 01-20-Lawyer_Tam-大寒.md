@@ -13,6 +13,6 @@
 
 祝安康……
 
-![](/Users/jliu23/Documents/Personal/2020wuhan_individual_stories/pic/01-20-Lawyer_Tam-大寒1.jpg)
+![](./pic/01-20-Lawyer_Tam-大寒1.jpg)
 
 
