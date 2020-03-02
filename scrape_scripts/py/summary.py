@@ -30,7 +30,7 @@ def load_data(filename):
                 pass
             elif line[0:2] == '来源':
                 link = get_first_link(line)
-                link = '[]('+link+')'
+                link = '[link]('+link+')'
                 #print(line)
             elif line[0:2] == '20':
                 date = line[0:-1]
@@ -38,13 +38,13 @@ def load_data(filename):
             elif line[0:2] == '![':
                 pics=get_first_link(line)
                 pics = '../../'+pics
-                pics = '[]('+ pics +')'
+                pics = '[pics]('+ pics +')'
             else:#this is the content
                 pass
                 #print(line[0:2])
             #if ( line[0:3]
     #print([date,title,link,filename,pics])
-    filename = '[]('+filename+')'
+    filename = '[file]('+filename+')'
     table_raw = ' | '.join([date,title,link,filename,pics])
     table_raw = ('| '+ table_raw + ' |')
     #return [date,title,link,filename,pics]
