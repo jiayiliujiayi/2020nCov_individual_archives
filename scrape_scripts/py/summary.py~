@@ -1,0 +1,6 @@
+# create a summary for the data base
+
+
+import os
+for filename in os.listdir(os.getcwd()):
+   # do your stuff
