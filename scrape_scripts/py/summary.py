@@ -12,6 +12,8 @@ def table_entry_dump(data_list):
 
 def check_filename(filename):
     # check first
+    if filename == '../../README.md' :
+        return ''
     return load_data(filename)
 
 def get_first_link(line):
@@ -22,15 +24,21 @@ def get_first_link(line):
     return link
 
 def load_data(filename):
+    print(filename)
     title = filename
-    pics='null'
+    pics='no pics'
+    date='no date'
+    link='no link'
     with open(filename,'r') as f:
         for line in f.readlines():
             if line =='\n':
                 pass
             elif line[0:2] == '来源':
-                link = get_first_link(line)
-                link = '[link]('+link+')'
+                try:
+                    link = get_first_link(line)
+                    link = '[link]('+link+')'
+                except:
+                    link = 'no link'
                 #print(line)
             elif line[0:2] == '20':
                 date = line[0:-1]
@@ -46,16 +54,19 @@ def load_data(filename):
     #print([date,title,link,filename,pics])
     filename = '[file]('+filename+')'
     table_raw = ' | '.join([date,title,link,filename,pics])
-    table_raw = ('| '+ table_raw + ' |')
+    table_raw = ('| '+ table_raw + ' |\n')
     #return [date,title,link,filename,pics]
     return table_raw
 
+import glob
 
 with open('readme.md', 'a') as f:
     path='../../'
-    for filename in os.listdir(path):
-        table_raw = check_filename(path+filename)
-        print(table_raw)
+    #for filename in os.listdir(path):
+        #table_raw = check_filename(path+filename)
+    for filename in glob.glob(path+'*.md'):   
+        table_raw = check_filename(filename)
+        #print(table_raw)
         f.write(table_raw)
-        break
-   # do your stuff
+
+
