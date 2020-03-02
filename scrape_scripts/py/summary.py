@@ -55,7 +55,7 @@ def load_data(filename):
     #print([date,title,link,filename,pics])
     filename = '[file]('+filename+')'
     table_raw = ' | '.join([date,title,link,filename,pics])
-    table_raw.replace(' ','\ ')
+    table_raw.replace(' ','&#32;')
     #table_raw.replace('\n','')
     table_raw = ('| '+ table_raw + ' |\n')
     #return [date,title,link,filename,pics]
