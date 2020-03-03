@@ -47,7 +47,8 @@ def load_data(filename):
             elif line[0:2] == '![':
                 pics=get_first_link(line)
                 pics = '../../'+pics
-                pics = '[pics]('+ pics +')'
+                #pics = '[pics]('+ pics +')'
+                pics = '<a href="'+ pics +'">pics</a>)'
             else:#this is the content
                 pass
                 #print(line[0:2])
@@ -55,9 +56,9 @@ def load_data(filename):
     #print([date,title,link,filename,pics])
     filename = '[file]('+filename+')'
     raw=[date,title,link,filename,pics]
-    for item in raw:
-        item = item.replace(' ','%20')
-        item = item.replace('\n','')
+    #for item in raw:
+        #item = item.replace(' ','%20')
+        #item = item.replace('\n','')
     table_raw = ' | '.join(raw)
     #table_raw = table_raw.replace(' ','%20')
     #table_raw.replace('\n','')
