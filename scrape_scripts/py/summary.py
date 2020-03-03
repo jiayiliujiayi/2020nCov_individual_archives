@@ -48,13 +48,15 @@ def load_data(filename):
                 pics=get_first_link(line)
                 pics = '../../'+pics
                 #pics = '[pics]('+ pics +')'
-                pics = '<a href="'+ pics +'">pics</a>)'
+                pics = '<a href="'+ pics +'">pics</a>'
             else:#this is the content
                 pass
                 #print(line[0:2])
             #if ( line[0:3]
     #print([date,title,link,filename,pics])
-    filename = '[file]('+filename+')'
+    #filename = '[file]('+filename+')'
+    filename = '<a href"'+filename+'">file</a>'
+    title='<a>'+title+'</a>'
     raw=[date,title,link,filename,pics]
     #for item in raw:
         #item = item.replace(' ','%20')
