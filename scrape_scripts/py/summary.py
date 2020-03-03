@@ -55,7 +55,7 @@ def load_data(filename):
             #if ( line[0:3]
     #print([date,title,link,filename,pics])
     #filename = '[file]('+filename+')'
-    filename = '<a href"'+filename+'">file</a>'
+    filename = '<a href="'+filename+'">file</a>'
     title='<a>'+title+'</a>'
     raw=[date,title,link,filename,pics]
     #for item in raw:
