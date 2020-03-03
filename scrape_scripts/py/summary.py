@@ -54,8 +54,12 @@ def load_data(filename):
             #if ( line[0:3]
     #print([date,title,link,filename,pics])
     filename = '[file]('+filename+')'
-    table_raw = ' | '.join([date,title,link,filename,pics])
-    table_raw = table_raw.replace(' ','%20')
+    raw=[date,title,link,filename,pics]
+    for item in raw:
+        item = item.replace(' ','%20')
+        item = item.replace('\n','')
+    table_raw = ' | '.join(raw)
+    #table_raw = table_raw.replace(' ','%20')
     #table_raw.replace('\n','')
     table_raw = ('| '+ table_raw + ' |\n')
     #return [date,title,link,filename,pics]
