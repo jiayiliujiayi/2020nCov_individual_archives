@@ -1,0 +1,15 @@
+# sample yaml data for a news entry
+
+- filename:
+  short_date:
+  author:
+  title:
+  authorization: yes/no
+  author_url:  
+  source_url:
+  lond_date:
+  # yyyy-mm-dd hh:mm:ss
+  # 2020-01-27 00:13:10
+  pics:
+  - name:
+    url:
