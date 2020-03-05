@@ -3,7 +3,7 @@
 
 import os
 
-os.system('cp table_header.md readme.md')
+os.system('cp table_header.md table.md')
 
 def table_entry_dump(data_list):
     #return markdown table entry for a new line

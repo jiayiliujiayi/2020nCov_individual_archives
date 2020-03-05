@@ -1,6 +1,7 @@
 # create a summary for the data base
 # output format: markdown table
 import json
+import yaml
 
 import os
 
@@ -97,19 +98,36 @@ def load_data(filename,path):
     #table_raw.replace('\n','')
     table_raw = ('| '+ table_raw + ' |\n')
     #return [date,title,link,filename,pics]
-    return (json.dumps(article, indent=2))
+    #return (json.dumps(article, indent=2))
+    return article
     #return table_raw
 
 import glob
 
-with open('data/articls.json', 'w') as f:
+'''
+with open('data/articles.json', 'w') as f:
+
     path='../archives/'
+    f.write('[\n')
     #for filename in os.listdir(path):
         #table_raw = check_filename(path+filename)
     for filename in glob.glob(path+'*.md'):   
         table_raw = check_filename(filename,path)
         #print(table_raw)
         #break
-        f.write(table_raw+'\n')
+        f.write(table_raw+',\n')
+    f.write(']')
+'''
 
+path='../archives/'
+write_path='../docs/_data/articles/'
+write_path='../docs/_data/yaml/'
+
+for filename in glob.glob(path+'*.md'):   
+    table_raw = check_filename(filename,path)
+        #print(table_raw)
+        #break
+    with open(write_path+filename[len(path):-3]+'.yml','w') as f:
+        f.write(yaml.dump(table_raw))
+    
 
