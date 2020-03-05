@@ -1,8 +1,7 @@
 I use python to extract all data and show them in a summary table.
 
-We can do anything with those data entries, including rearrange layout, etc.
+the only script I use is extract_data.py, which read data from original post in ./archives and save them into yaml format in ./docs/_data/yaml/
 
-Note: this is a beta version. The data may not be correct.
+See more information here.
 
-| date | title | link | file | pics |
-|--|-|-|-|--------------------------|
+https://weileizeng.github.io/2020nCov_individual_archives/
