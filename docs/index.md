@@ -20,6 +20,13 @@ source_url:
 title: "\u5927\u5BD2"
 ```
 
+### check again
+
+{{ site.data.articles[0][1] }}
+
+{{ site.data.articles[1] }}
+
+
 A sample of how to call the yaml data in jekyll/Github Pages.
 
 ```html
@@ -33,7 +40,7 @@ A sample of how to call the yaml data in jekyll/Github Pages.
 The above code will produce the following markdown table
 
 | index | auth | title | long_date | author | pics |
-{% for item in site.data.yaml  %}{% assign article = item[1] %}| {{ forloop.index }} | {{ article.authorization }} |  {{ article.title }} |   {{ article.long_date }} | {{ article.author }} | {% if article.pics[0] %}  pics {% endif %} |
+{% for item in site.data.yaml  limit: 20 %}{% assign article = item[1] %}| {{ forloop.index }} | {{ article.authorization }} |  {{ article.title }} |   {{ article.long_date }} | {{ article.author }} | {% if article.pics[0] %}  pics {% endif %} |
 {% endfor %}
 
 

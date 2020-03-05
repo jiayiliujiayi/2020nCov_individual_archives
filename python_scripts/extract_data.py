@@ -31,11 +31,11 @@ def load_data(filename,path):
     article={}
     article['filename']=filename[len(path):]
     article['title']=filename.split('-')[-1][:-3]
-    print(filename)
-    title = filename
-    pics='no pics'
-    date='no date'
-    link='no link'
+    #print(filename)
+    #title = filename
+    #pics='no pics'
+    #date='no date'
+    #link='no link'
     with open(filename,'r') as f:
         #for line in f.readlines():
         for line in f:            
@@ -43,41 +43,48 @@ def load_data(filename,path):
                 pass
             elif line[0:9] == '已获得作者转载授权':
                 article['authorization'] = 'yes'
+            elif line[0:2] == '作者':
+                article['author']=line[3:].split(']')[0][1:]
+                article['author_url']=line[3:].split('(')[1][:-1]     
             elif line[0:2] == '来源':
-                try:
-                    sources= line[2:].split('的')
+                #try:
+                    sources= line[3:].split('的')
+                    #print(sources)
                     if len(sources) > 1:
-                        article['author']=sources[0].split(']')[0][1:]
-                        article['author_url']=sources[0].split('(')[1][:-1]
-                        article['source']=sources[1].split(']')[0][1:]
-                        article['source_url']=sources[1].split('(')[1][:-1]
+                        article['author']=sources[-2].split(']')[0][1:]
+                        article['author_url']=sources[-2].split('(')[1][:-1]
+                        article['source']=sources[-1].split(']')[0][1:]
+                        article['source_url']=sources[-1].split('(')[1][:-2]
                     else:
                         article['source_url'] = sources
                         
-                    link = get_first_link(line)
-                    link = '[link]('+link+')'
-                except:
-                    link = 'no link'
+                    #link = get_first_link(line)
+                    #link = '[link]('+link+')'
+                #except:
+                    #print('no link in source')
+                    #print(filename)
+                    #print(line)
+                    #link = 'no link'
                 #print(line)
             elif line[0:2] == '20':
-                date = line[0:-1]
+                #date = line[0:-1]
                 article['long_date']=line[:-1]
                 #finish reading file header
                 break
                 #print(line)
-            elif line[0:2] == '![':
-                pics=get_first_link(line)
-                pics = '../../'+pics
+            #elif line[0:2] == '![':
+                #pics=get_first_link(line)
+                #pics = '../../'+pics
                 #pics = '[pics]('+ pics +')'
-                pics = '<a href="'+ pics +'">pics</a>'
+                #pics = '<a href="'+ pics +'">pics</a>'
 
         content=''
         pics_list=[]
         for line in f:#.readlines():
             if line[0:2] == '![':
                pics_list.append({
-                   'name': line.split('(')[1][:-1],
-                   'url': line.split('(')[1][:-1]
+                   'name': line.split('(')[1][:-2],
+                   'url': line.split('(')[1][:-2]
                })
             else:
                 content += line
@@ -87,16 +94,16 @@ def load_data(filename,path):
             #if ( line[0:3]
     #print([date,title,link,filename,pics])
     #filename = '[file]('+filename+')'
-    filename = '<a href="'+filename+'">file</a>'
-    title='<a>'+title+'</a>'
-    raw=[date,title,link,filename,pics]
+    #filename = '<a href="'+filename+'">file</a>'
+    #title='<a>'+title+'</a>'
+    #raw=[date,title,link,filename,pics]
     #for item in raw:
         #item = item.replace(' ','%20')
         #item = item.replace('\n','')
-    table_raw = ' | '.join(raw)
+    #table_raw = ' | '.join(raw)
     #table_raw = table_raw.replace(' ','%20')
     #table_raw.replace('\n','')
-    table_raw = ('| '+ table_raw + ' |\n')
+    #table_raw = ('| '+ table_raw + ' |\n')
     #return [date,title,link,filename,pics]
     #return (json.dumps(article, indent=2))
     return article
@@ -121,13 +128,19 @@ with open('data/articles.json', 'w') as f:
 
 path='../archives/'
 write_path='../docs/_data/articles/'
-write_path='../docs/_data/yaml/'
+#write_path='../docs/_data/yaml/'
+
+
+index=1
 
 for filename in glob.glob(path+'*.md'):   
-    table_raw = check_filename(filename,path)
+    obj = check_filename(filename,path)
         #print(table_raw)
         #break
-    with open(write_path+filename[len(path):-3]+'.yml','w') as f:
-        f.write(yaml.dump(table_raw))
+    write_filename=write_path+filename[len(path):-3]+'.yml'
+    write_filename=write_path+'article'+str(index)+'.yml'
+    index += 1
+    with open(write_filename ,'w') as f:
+        f.write(yaml.dump(obj))
     
-
+print('total files:'+str(index-1))
