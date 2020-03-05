@@ -1,46 +1,51 @@
-### demo of data extraction and rearrangement
+{% include menu.md %}
 
-我觉得你最新的体例规范的挺好的，每个文本都有固定的合适，这样比较方便提取和处理。虽然一些比较早的文件不是完全按照这个格式，但总体来说问题不大。
+## demo of data extraction and rearrangement
 
-我把文件提取在doc/_data/yaml/ 中。这是yaml格式的文件，类似于数组。
+* extract data acoording to the format ( dated March 5). The data is saved in yaml format (docs/_data/yaml)
 
-yaml格式预览
+### how to use it
+* the yaml file is a very flexible data format. We can manipulate it in whatever way we prefer, e.g. [tables](all) or [post](samplepost)
+* If you want to host the website, go to setting, find Github pages section, choose master branch docs folder. Then the website will be online in minutes. We got too many files so be patient.
+
+### note
+* storage got tripled, cause there are two copies of all pictures inside doc/. Each copy is about 300M. let me know if this produce a problem. I think the github maximum is 2G.
+* because of so many files, the building/updating time for the web may take several minutes.
+
+
+
+sample of file in yaml format. I add an id/index number for each article, which helps me to identify them. The files in yaml folder is saved as "article[id].yml"
 
 ```yaml
+author: "\u5C0F\u94BB\u98CE"
+author_url: https://www.douban.com/people/58982367/
 authorization: 'yes'
-content: "\n\u56DB\u65F6\u6709\u5E8F\uFF0C\u4ECA\u65E5\u5927\u5BD2\u3002\n\n\u795D\
-  \u5B89\u5EB7\u2026\u2026\n\n\n\n"
-filename: "01-20-Lawyer_Tam-\u5927\u5BD2.md"
-long_date: '2020-01-20 23:39:02'
-pics:
-- name: "./pic/01-20-Lawyer_Tam-\u5927\u5BD21.jpg)"
-  url: "./pic/01-20-Lawyer_Tam-\u5927\u5BD21.jpg)"
-source_url:
-- "\uFF1Ahttps://www.douban.com/note/749673092/\n"
-title: "\u5927\u5BD2"
+content: "\n\n  \n\n"
+filename: "01-25-\u5C0F\u94BB\u98CE-2020\u6B66\u6C49\u56E0\u65B0\u51A0\u72B6\u75C5\
+  \u6BD2\u80BA\u708E\u5C01\u57CEday03.md"
+index: 74
+long_date: '2020-01-25 17:32:45'
+pics: []
+source: NA
+source_url: https://www.douban.com/link2/?url=http%3A%2F%2Fwww.douban.com%2Fnote%2F750015590%2F&type=note&pos=title
+title: "2020\u6B66\u6C49\u56E0\u65B0\u51A0\u72B6\u75C5\u6BD2\u80BA\u708E\u5C01\u57CE\
+  day03"
 ```
 
-### check again
-
-{{ site.data.articles[0][1] }}
-
-{{ site.data.articles[1] }}
-
-
-A sample of how to call the yaml data in jekyll/Github Pages.
+### A sample of how to call the yaml data in jekyll/Github Pages.
 
 ```html
 {% raw %}
-| index | auth | title | long_date | author | pics |
-{% for item in site.data.yaml  %}{% assign article = item[1] %}| {{ forloop.index }} | {{ article.authorization }} |  {{ article.title }} |   {{ article.long_date }} | {{ article.author }} | {% if article.pics[0] %}  pics {% endif %} |
+| id | auth | title | long_date | author | pics | source |
+{% for item in site.data.yaml  limit: 30 %}{% assign article = item[1] %}| {{ article.index }} | {{ article.authorization }} |  {{ article.title }} |   {{ article.long_date }} | {{ article.author }} |  {{ article.pics | size }} | [{{ article.source }}]({{ article.source_url }}) |
 {% endfor %}
 {% endraw %}
 ```
 
 The above code will produce the following markdown table
 
-| index | auth | title | long_date | author | pics |
-{% for item in site.data.yaml  limit: 20 %}{% assign article = item[1] %}| {{ forloop.index }} | {{ article.authorization }} |  {{ article.title }} |   {{ article.long_date }} | {{ article.author }} | {% if article.pics[0] %}  pics {% endif %} |
+| id | auth | title | long_date | author | pics | source |
+{% for item in site.data.yaml  limit: 30 %}{% assign article = item[1] %}| {{ article.index }} | {{ article.authorization }} |  {{ article.title }} |   {{ article.long_date }} | {{ article.author }} |  {{ article.pics | size }} | [{{ article.source }}]({{ article.source_url }}) |
 {% endfor %}
 
 

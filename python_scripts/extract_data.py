@@ -15,7 +15,7 @@ def table_entry_dump(data_list):
     
 def check_filename(filename, path):
     # check first
-    if filename == '../../README.md' :
+    if filename[-9:] == 'README.md' :
         return ''
     return load_data(filename, path)
 
@@ -26,9 +26,14 @@ def get_first_link(line):
     link = b[0]
     return link
 
-def load_data(filename,path):
+def load_data(filename,path,index,write_filename):    
     #return a json object defined by sample.yml
+    if filename[-9:] == 'README.md' :
+        return 
+
+    
     article={}
+    article['index']=index
     article['filename']=filename[len(path):]
     article['title']=filename.split('-')[-1][:-3]
     #print(filename)
@@ -44,19 +49,20 @@ def load_data(filename,path):
             elif line[0:9] == '已获得作者转载授权':
                 article['authorization'] = 'yes'
             elif line[0:2] == '作者':
-                article['author']=line[3:].split(']')[0][1:]
-                article['author_url']=line[3:].split('(')[1][:-1]     
+                article['author']=line[3:].split(']')[0][1:-6]
+                article['author_url']=line[3:].split('(')[1][:-2]     
             elif line[0:2] == '来源':
                 #try:
                     sources= line[3:].split('的')
                     #print(sources)
                     if len(sources) > 1:
-                        article['author']=sources[-2].split(']')[0][1:]
-                        article['author_url']=sources[-2].split('(')[1][:-1]
+                        article['author']=sources[-2].split(']')[0][1:-6]
+                        article['author_url']=sources[-2].split('(')[1][:-2]
                         article['source']=sources[-1].split(']')[0][1:]
                         article['source_url']=sources[-1].split('(')[1][:-2]
                     else:
-                        article['source_url'] = sources
+                        article['source'] = 'NA'
+                        article['source_url'] = line[3:-1]
                         
                     #link = get_first_link(line)
                     #link = '[link]('+link+')'
@@ -106,7 +112,9 @@ def load_data(filename,path):
     #table_raw = ('| '+ table_raw + ' |\n')
     #return [date,title,link,filename,pics]
     #return (json.dumps(article, indent=2))
-    return article
+    with open(write_filename ,'w') as f:
+        f.write(yaml.dump(article))    
+    #return article
     #return table_raw
 
 import glob
@@ -127,20 +135,21 @@ with open('data/articles.json', 'w') as f:
 '''
 
 path='../archives/'
-write_path='../docs/_data/articles/'
-#write_path='../docs/_data/yaml/'
+#write_path='../docs/_data/articles/'
+write_path='../docs/_data/yaml/'
 
 
 index=1
 
 for filename in glob.glob(path+'*.md'):   
-    obj = check_filename(filename,path)
+
         #print(table_raw)
         #break
     write_filename=write_path+filename[len(path):-3]+'.yml'
     write_filename=write_path+'article'+str(index)+'.yml'
+    obj = load_data(filename,path,index,write_filename)    
     index += 1
-    with open(write_filename ,'w') as f:
-        f.write(yaml.dump(obj))
+#    with open(write_filename ,'w') as f:
+#        f.write(yaml.dump(obj))
     
 print('total files:'+str(index-1))

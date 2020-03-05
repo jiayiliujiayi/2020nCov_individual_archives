@@ -1,15 +1,22 @@
 ---
 title: Post
 ---
-{% assign article =  site.data.articles.article111 %}
+{% include menu.md %}
+
+This is a sample post on how we can use the yaml data. We can regenrate all articles this way.
+
+{% assign article =  site.data.yaml.article111 %}
 ## {{ article.title }}
 
+index/id: {{ article.index }}
 
 authorization: {{ article.authorization }}
 
 date: {{ article.long_date }}
 
 author: {{ article.author }}
+
+source: {{ article.sourec_url }}
 
 {{ article.content }}
 
